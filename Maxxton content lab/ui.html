@@ -1,0 +1,28 @@
+<h2>Shape Creator</h2>
+<p>Count: <input id="count" type="number" value="5"></p>
+<select name="dataset" id="dataset">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+</select>
+<button id="create">Create</button>
+<button id="cancel">Cancel</button>
+<script>
+
+    parent.onmessage(msg => {
+        console.log(msg.type);
+      console.log(msg.type === 'new-datasets');
+    })
+
+document.getElementById('create').onclick = () => {
+  const textbox = document.getElementById('count');
+  const count = parseInt(textbox.value, 10);
+  parent.postMessage({ pluginMessage: { type: 'create-shapes', count } }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+
+</script>

@@ -1,11 +1,10 @@
 {
-    "name": "Content Buddy",
-    "id": "731260490045684148",
-    "api": "1.0.0",
-    "ui": "dist/ui.html",
-    "main": "dist/core.js",
-    "editorType": [
-        "figjam",
-        "figma"
-    ]
+  "name": "Maxxton content lab",
+  "id": "1413875692063973286",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "documentAccess": "dynamic-page",
+  "networkAccess": { "allowedDomains": ["none"] },
+  "editorType": ["figma", "figjam"]
 }

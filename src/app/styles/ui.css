@@ -1,0 +1,1638 @@
+:root {
+  --font-family-default: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+  sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+  SFProLocalRange;
+  --font-family-monospace: 'Roboto Mono', monospace;
+}
+:root {
+  --space-0: 0rem;
+  --space-px: 0.0625rem;
+  --space-0_5: 0.125rem;
+  --space-1: 0.25rem;
+  --space-1_5: 0.375rem;
+  --space-2: 0.5rem;
+  --space-2_5: 0.625rem;
+  --space-3: 0.75rem;
+  --space-3_5: 0.875rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-9: 2.25rem;
+  --space-10: 2.5rem;
+  --space-11: 2.75rem;
+  --space-12: 3rem;
+  --space-13: 3.25rem;
+  --space-14: 3.5rem;
+  --space-15: 3.75rem;
+  --space-16: 4rem;
+}
+:root {
+  --radius-extra-small: 0.0625rem;
+  --radius-small: 0.125rem;
+  --radius-medium: 0.3125rem;
+  --radius-large: 0.8125rem;
+  --radius-full: 9999px;
+  --radius-default: var(--radius-small);
+}
+:root {
+  --font-size-1: 0.5625rem;
+  --font-size-2: 0.625rem;
+  --font-size-3: 0.6875rem;
+  --font-size-4: 0.75rem;
+  --font-size-5: 0.8125rem;
+  --font-size-6: 0.875rem;
+  --font-size-7: 0.9375rem;
+  --font-size-8: 1rem;
+  --font-size-9: 1.25rem;
+  --font-size-10: 1.5rem;
+  --font-size-default: var(--font-size-3);
+}
+:root {
+  --font-weight-default: 450;
+  --font-weight-strong: 550;
+}
+:root {
+  --line-height-1: 0.875rem;
+  --line-height-2: 0.875rem;
+  --line-height-3: 1rem;
+  --line-height-4: 1rem;
+  --line-height-5: 1.375rem;
+  --line-height-6: 1.5rem;
+  --line-height-7: 1.5625rem;
+  --line-height-8: 1.5625rem;
+  --line-height-9: 2rem;
+  --line-height-10: 2rem;
+  --line-height-default: var(--line-height-3);
+}
+:root {
+  --letter-spacing-1: 0.00281rem;
+  --letter-spacing-2: 0.00625rem;
+  --letter-spacing-3: 0.00344rem;
+  --letter-spacing-4: 0;
+  --letter-spacing-5: -0.002rem;
+  --letter-spacing-6: -0.00525rem;
+  --letter-spacing-7: -0.00469rem;
+  --letter-spacing-8: -0.011rem;
+  --letter-spacing-9: -0.013812rem;
+  --letter-spacing-10: -0.0255rem;
+  --letter-spacing-default: var(--letter-spacing-3);
+}
+:root {
+  --elevation-100: 0px 0px 0.5px rgba(0, 0, 0, 0.3), 0px 1px 3px rgba(0, 0, 0, 0.15);
+  --elevation-200: 0px 0px 0.5px rgba(0, 0, 0, 0.18), 0px 3px 8px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.1);
+  --elevation-300: 0px 0px 0.5px rgba(0, 0, 0, 0.15), 0px 5px 12px rgba(0, 0, 0, 0.13), 0px 1px 3px rgba(0, 0, 0, 0.1);
+  --elevation-400: 0px 0px 0.5px rgba(0, 0, 0, 0.12), 0px 10px 16px rgba(0, 0, 0, 0.12), 0px 2px 5px rgba(0, 0, 0, 0.15);
+  --elevation-500: 0px 0px 0.5px rgba(0, 0, 0, 0.08), 0px 10px 24px rgba(0, 0, 0, 0.18), 0px 2px 5px rgba(0, 0, 0, 0.15);
+}
+.dark,
+.dark-theme {
+  --elevation-100: 0px 0px 0.5px rgba(0, 0, 0, 0.5), 0px 1px 3px rgba(0, 0, 0, 0.4),
+  inset 0px 0.5px 0px rgba(255, 255, 255, 0.1), inset 0px 0px 0.5px rgba(255, 255, 255, 0.3);
+
+  --elevation-200: 0px 3px 8px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.5),
+  inset 0px 0.5px 0px rgba(255, 255, 255, 0.08), inset 0px 0px 0.5px rgba(255, 255, 255, 0.3);
+
+  --elevation-300: 0px 5px 12px rgba(0, 0, 0, 0.35), 0px 1px 3px rgba(0, 0, 0, 0.5),
+  inset 0px 0.5px 0px rgba(255, 255, 255, 0.08), inset 0px 0px 0.5px rgba(255, 255, 255, 0.3);
+
+  --elevation-400: 0px 10px 16px rgba(0, 0, 0, 0.35), 0px 2px 5px rgba(0, 0, 0, 0.35),
+  inset 0px 0.5px 0px rgba(255, 255, 255, 0.08), inset 0px 0px 0.5px rgba(255, 255, 255, 0.35);
+
+  --elevation-500: 0px 10px 24px rgba(0, 0, 0, 0.45), 0px 3px 5px rgba(0, 0, 0, 0.35),
+  inset 0px 0.5px 0px rgba(255, 255, 255, 0.08), inset 0px 0px 0.5px rgba(255, 255, 255, 0.35);
+}
+:root {
+  --color-bg-menu: #1e1e1e;
+  --color-bg-menu-hover: #2c2c2c;
+  --color-bg-menu-selected: var(--figma-color-bg-selected-strong);
+  --color-border-menu: #383838;
+  --color-text-menu: var(--figma-color-text-oncomponent);
+  --color-text-menu-secondary: var(--figma-color-text-oncomponent-secondary);
+  --color-text-menu-tertiary: var(--figma-color-text-oncomponent-tertiary);
+  --color-icon-menu: var(--figma-color-icon-oncomponent);
+  --shadow-menu: var(--elevation-400);
+  --font-size-menu: 12px;
+
+  --color-bg-tooltip: #1e1e1e;
+  --color-text-tooltip: #fff;
+  --shadow-tooltip: var(--elevation-300);
+
+  --color-overlay-dialog: #00000080;
+
+  /* Aliased for brevity when using in icon attributes */
+  --color-icon: var(--figma-color-icon);
+  --color-icon-secondary: var(--figma-color-icon-secondary);
+  --color-icon-tertiary: var(--figma-color-icon-tertiary);
+}
+.fp-Flex {
+  display: flex;
+}
+.fp-Flex:where(.fp-direction-row) {
+  flex-direction: row;
+}
+.fp-Flex:where(.fp-direction-column) {
+  flex-direction: column;
+}
+.fp-Flex:where(.fp-direction-row-reverse) {
+  flex-direction: row-reverse;
+}
+.fp-Flex:where(.fp-direction-column-reverse) {
+  flex-direction: column-reverse;
+}
+.fp-Flex:where(.fp-align-start) {
+  align-items: flex-start;
+}
+.fp-Flex:where(.fp-align-center) {
+  align-items: center;
+}
+.fp-Flex:where(.fp-align-end) {
+  align-items: flex-end;
+}
+.fp-Flex:where(.fp-align-baseline) {
+  align-items: baseline;
+}
+.fp-Flex:where(.fp-align-stretch) {
+  align-items: stretch;
+}
+/* Justify Classes */
+.fp-Flex:where(.fp-justify-start) {
+  justify-content: flex-start;
+}
+.fp-Flex:where(.fp-justify-center) {
+  justify-content: center;
+}
+.fp-Flex:where(.fp-justify-end) {
+  justify-content: flex-end;
+}
+.fp-Flex:where(.fp-justify-between) {
+  justify-content: space-between;
+}
+.fp-Flex:where(.fp-wrap-nowrap) {
+  flex-wrap: nowrap;
+}
+.fp-Flex:where(.fp-wrap-wrap) {
+  flex-wrap: wrap;
+}
+.fp-Flex:where(.fp-wrap-wrap-reverse) {
+  flex-wrap: wrap-reverse;
+}
+.fp-Flex:where(.fp-gap-0) {
+  gap: var(--space-0);
+}
+.fp-Flex:where(.fp-gap-px) {
+  gap: var(--space-px);
+}
+.fp-Flex:where(.fp-gap-0_5) {
+  gap: var(--space-0_5);
+}
+.fp-Flex:where(.fp-gap-1) {
+  gap: var(--space-1);
+}
+.fp-Flex:where(.fp-gap-1_5) {
+  gap: var(--space-1_5);
+}
+.fp-Flex:where(.fp-gap-2) {
+  gap: var(--space-2);
+}
+.fp-Flex:where(.fp-gap-2_5) {
+  gap: var(--space-2_5);
+}
+.fp-Flex:where(.fp-gap-3) {
+  gap: var(--space-3);
+}
+.fp-Flex:where(.fp-gap-3_5) {
+  gap: var(--space-3_5);
+}
+.fp-Flex:where(.fp-gap-4) {
+  gap: var(--space-4);
+}
+.fp-Flex:where(.fp-gap-5) {
+  gap: var(--space-5);
+}
+.fp-Flex:where(.fp-gap-6) {
+  gap: var(--space-6);
+}
+.fp-Flex:where(.fp-gap-7) {
+  gap: var(--space-7);
+}
+.fp-Flex:where(.fp-gap-8) {
+  gap: var(--space-8);
+}
+.fp-Flex:where(.fp-gap-9) {
+  gap: var(--space-9);
+}
+.fp-Flex:where(.fp-gap-10) {
+  gap: var(--space-10);
+}
+.fp-Flex:where(.fp-gap-11) {
+  gap: var(--space-11);
+}
+.fp-Flex:where(.fp-gap-12) {
+  gap: var(--space-12);
+}
+.fp-Flex:where(.fp-gap-13) {
+  gap: var(--space-13);
+}
+.fp-Flex:where(.fp-gap-14) {
+  gap: var(--space-14);
+}
+.fp-Flex:where(.fp-gap-15) {
+  gap: var(--space-15);
+}
+.fp-Flex:where(.fp-gap-16) {
+  gap: var(--space-16);
+}
+/* Row Gap Classes */
+.fp-Flex:where(.fp-rowGap-0) {
+  row-gap: var(--space-0);
+}
+.fp-Flex:where(.fp-rowGap-px) {
+  row-gap: var(--space-px);
+}
+.fp-Flex:where(.fp-rowGap-0_5) {
+  row-gap: var(--space-0_5);
+}
+.fp-Flex:where(.fp-rowGap-1) {
+  row-gap: var(--space-1);
+}
+.fp-Flex:where(.fp-rowGap-1_5) {
+  row-gap: var(--space-1_5);
+}
+.fp-Flex:where(.fp-rowGap-2) {
+  row-gap: var(--space-2);
+}
+.fp-Flex:where(.fp-rowGap-2_5) {
+  row-gap: var(--space-2_5);
+}
+.fp-Flex:where(.fp-rowGap-3) {
+  row-gap: var(--space-3);
+}
+.fp-Flex:where(.fp-rowGap-3_5) {
+  row-gap: var(--space-3_5);
+}
+.fp-Flex:where(.fp-rowGap-4) {
+  row-gap: var(--space-4);
+}
+.fp-Flex:where(.fp-rowGap-5) {
+  row-gap: var(--space-5);
+}
+.fp-Flex:where(.fp-rowGap-6) {
+  row-gap: var(--space-6);
+}
+.fp-Flex:where(.fp-rowGap-7) {
+  row-gap: var(--space-7);
+}
+.fp-Flex:where(.fp-rowGap-8) {
+  row-gap: var(--space-8);
+}
+.fp-Flex:where(.fp-rowGap-9) {
+  row-gap: var(--space-9);
+}
+.fp-Flex:where(.fp-rowGap-10) {
+  row-gap: var(--space-10);
+}
+.fp-Flex:where(.fp-rowGap-11) {
+  row-gap: var(--space-11);
+}
+.fp-Flex:where(.fp-rowGap-12) {
+  row-gap: var(--space-12);
+}
+.fp-Flex:where(.fp-rowGap-13) {
+  row-gap: var(--space-13);
+}
+.fp-Flex:where(.fp-rowGap-14) {
+  row-gap: var(--space-14);
+}
+.fp-Flex:where(.fp-rowGap-15) {
+  row-gap: var(--space-15);
+}
+.fp-Flex:where(.fp-rowGap-16) {
+  row-gap: var(--space-16);
+}
+.fp-Flex:where(.fp-columnGap-0) {
+  column-gap: var(--space-0);
+}
+.fp-Flex:where(.fp-columnGap-px) {
+  column-gap: var(--space-px);
+}
+.fp-Flex:where(.fp-columnGap-0_5) {
+  column-gap: var(--space-0_5);
+}
+.fp-Flex:where(.fp-columnGap-1) {
+  column-gap: var(--space-1);
+}
+.fp-Flex:where(.fp-columnGap-1_5) {
+  column-gap: var(--space-1_5);
+}
+.fp-Flex:where(.fp-columnGap-2) {
+  column-gap: var(--space-2);
+}
+.fp-Flex:where(.fp-columnGap-2_5) {
+  column-gap: var(--space-2_5);
+}
+.fp-Flex:where(.fp-columnGap-3) {
+  column-gap: var(--space-3);
+}
+.fp-Flex:where(.fp-columnGap-3_5) {
+  column-gap: var(--space-3_5);
+}
+.fp-Flex:where(.fp-columnGap-4) {
+  column-gap: var(--space-4);
+}
+.fp-Flex:where(.fp-columnGap-5) {
+  column-gap: var(--space-5);
+}
+.fp-Flex:where(.fp-columnGap-6) {
+  column-gap: var(--space-6);
+}
+.fp-Flex:where(.fp-columnGap-7) {
+  column-gap: var(--space-7);
+}
+.fp-Flex:where(.fp-columnGap-8) {
+  column-gap: var(--space-8);
+}
+.fp-Flex:where(.fp-columnGap-9) {
+  column-gap: var(--space-9);
+}
+.fp-Flex:where(.fp-columnGap-10) {
+  column-gap: var(--space-10);
+}
+.fp-Flex:where(.fp-columnGap-11) {
+  column-gap: var(--space-11);
+}
+.fp-Flex:where(.fp-columnGap-12) {
+  column-gap: var(--space-12);
+}
+.fp-Flex:where(.fp-columnGap-13) {
+  column-gap: var(--space-13);
+}
+.fp-Flex:where(.fp-columnGap-14) {
+  column-gap: var(--space-14);
+}
+.fp-Flex:where(.fp-columnGap-15) {
+  column-gap: var(--space-15);
+}
+.fp-Flex:where(.fp-columnGap-16) {
+  column-gap: var(--space-16);
+}
+.fp-Text {
+  margin: 0;
+  font-family: var(--font-family-default);
+  color: var(--figma-color-text);
+  font-size: var(--font-size, var(--font-size-default));
+  line-height: var(--line-height, var(--line-height-3));
+  letter-spacing: var(--letter-spacing, var(--letter-spacing-3));
+  font-weight: var(--font-weight, var(--font-weight-default));
+
+  /**
+  Use custom properties to avoid specificy issues when nesting Text.
+  Nested Text components inherit properties of the parent Text, unless customized.
+  At the same time, Text falls back to default values without requiring :root level styling. */
+}
+.fp-Text:where(.fp-size-small) {
+  --font-size: var(--font-size-1);
+  --line-height: var(--line-height-1);
+  --letter-spacing: var(--letter-spacing-1);
+}
+.fp-Text:where(.fp-size-medium) {
+  --font-size: var(--font-size-3);
+  --line-height: var(--line-height-3);
+  --letter-spacing: --letter-spacing-3;
+}
+.fp-Text:where(.fp-size-large) {
+  --font-size: var(--font-size-5);
+  --line-height: var(--line-height-5);
+  --letter-spacing: var(--letter-spacing-5);
+}
+.fp-Text:where(.fp-weight-default) {
+  --font-weight: var(--font-weight-default);
+}
+.fp-Text:where(.fp-weight-strong) {
+  --font-weight: var(--font-weight-strong);
+}
+.fp-Text:where(.fp-align-start) {
+  text-align: start;
+}
+.fp-Text:where(.fp-align-center) {
+  text-align: center;
+}
+.fp-Text:where(.fp-align-end) {
+  text-align: end;
+}
+.fp-Text:where(.fp-block) {
+  display: block;
+}
+.fp-Text strong {
+  font-weight: var(--font-weight-strong);
+}
+.fp-Text code {
+  font-family: var(--font-family-monospace);
+  font-size: var(var(--font-size-2));
+  background-color: var(--figma-color-bg-brand-tertiary);
+  padding: 0.05rem 0.15rem;
+  border-radius: var(--radius-extra-small);
+}
+.fp-Text mark {
+  background-color: var(--figma-color-bg-onselected);
+}
+.fp-Link {
+  color: var(--figma-color-text-brand);
+  text-decoration: none;
+}
+.fp-Link:focus-visible {
+  outline: 1px solid var(--figma-color-border-selected-strong);
+}
+.fp-Icon {
+  display: block;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+.fp-Icon:where(.fp-size-1) {
+  width: var(--space-1);
+}
+.fp-Icon:where(.fp-size-2) {
+  width: var(--space-2);
+}
+.fp-Icon:where(.fp-size-2_5) {
+  width: var(--space-2_5);
+}
+.fp-Icon:where(.fp-size-3) {
+  width: var(--space-3);
+}
+.fp-Icon:where(.fp-size-3_5) {
+  width: var(--space-3_5);
+}
+.fp-Icon:where(.fp-size-4) {
+  width: var(--space-4);
+}
+.fp-Icon:where(.fp-size-5) {
+  width: var(--space-5);
+}
+.fp-Icon:where(.fp-size-6) {
+  width: var(--space-6);
+}
+.fp-Icon:where(.fp-size-7) {
+  width: var(--space-7);
+}
+.fp-Icon:where(.fp-size-8) {
+  width: var(--space-8);
+}
+.fp-Icon:where(.fp-size-9) {
+  width: var(--space-9);
+}
+.fp-Icon:where(.fp-size-10) {
+  width: var(--space-10);
+}
+.fp-Input {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: var(--space-6);
+  padding: var(--space-1) 0 var(--space-1) var(--space-2);
+  background-color: var(--figma-color-bg-secondary);
+  border-radius: var(--radius-medium);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: var(--line-height-default);
+  color: var(--figma-color-text);
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: -1px;
+  outline-color: transparent;
+}
+.fp-Input:hover:where(:not(:disabled, :focus)) {
+  outline-color: var(--figma-color-border);
+}
+.fp-Input:focus {
+  outline-color: var(--figma-color-border-selected);
+}
+.fp-Input:disabled {
+  background-color: var(--figma-color-bg);
+  outline-color: var(--figma-color-border-disabled);
+  color: var(--figma-color-text-disabled);
+}
+.fp-Input::placeholder {
+  color: var(--figma-color-text-tertiary);
+}
+.fp-ValueFieldRoot {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius-medium);
+  padding: 0 1px;
+  background-color: var(--figma-color-bg-secondary);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: var(--line-height-default);
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: -1px;
+  outline-color: transparent;
+}
+.fp-ValueFieldRoot:hover:where(:not([data-disabled])) {
+  outline-color: var(--figma-color-border);
+}
+.fp-ValueFieldRoot:focus-within {
+  outline-color: var(--figma-color-border-selected);
+}
+.fp-ValueFieldRoot[data-disabled] {
+  background-color: var(--figma-color-bg);
+  outline-color: var(--figma-color-border-disabled);
+  color: var(--figma-color-text-disabled);
+}
+.fp-ValueFieldRoot .fp-ValueFieldBase {
+  cursor: default;
+  outline: 0;
+}
+.fp-ValueFieldLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  color: var(--figma-color-text-secondary);
+  --color-icon: var(--figma-color-icon-secondary);
+  height: var(--space-6);
+  width: var(--space-6);
+
+  /* Usually used for suffixes.
+  TODO: Replace with a variant.  */
+}
+.fp-ValueFieldLabel:last-child {
+  width: var(--space-5);
+}
+.fp-ValueFieldLabel + .fp-ValueFieldBase {
+  padding-left: 0;
+}
+.fp-ValueFieldLabel[data-disabled] {
+  color: var(--figma-color-text-disabled);
+  --color-icon: var(--figma-color-icon-disabled);
+}
+.fp-ValueFieldMulti {
+  display: flex;
+  border-radius: var(--radius-medium);
+  outline-offset: -1px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  height: var(--space-6);
+  background-color: var(--figma-color-bg-secondary);
+}
+.fp-ValueFieldMulti:hover:where(:not([data-disabled])) {
+  border: 1px solid var(--figma-color-border);
+}
+.fp-ValueFieldMulti:focus-within {
+  outline: 1px solid var(--figma-color-border-selected);
+}
+.fp-ValueFieldMulti[data-disabled] {
+  border: 1px solid var(--figma-color-border-disabled);
+  background-color: var(--figma-color-bg);
+}
+.fp-ValueFieldMulti .fp-ValueFieldRoot {
+  height: var(--space-6);
+  flex-grow: 1;
+  outline: 0;
+  border-radius: 0;
+  background-color: transparent;
+  margin-top: -1px;
+}
+.fp-ValueFieldMulti .fp-ValueFieldRoot:not(:first-child) {
+  border-left: 1px solid var(--figma-color-bg);
+}
+.fp-ValueFieldMulti .fp-ValueFieldRoot:first-child {
+  border-top-left-radius: var(--radius-medium);
+  border-bottom-left-radius: var(--radius-medium);
+}
+.fp-ValueFieldMulti .fp-ValueFieldRoot:last-child {
+  border-top-right-radius: var(--radius-medium);
+  border-bottom-right-radius: var(--radius-medium);
+}
+.fp-ValueFieldMulti .fp-ValueFieldBase {
+  background-color: transparent;
+  padding-left: calc(var(--space-2) - 1px);
+}
+.fp-tooltip {
+  box-sizing: border-box;
+  padding: var(--space-1) var(--space-2);
+  background-color: var(--color-bg-tooltip);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: var(--line-height-default);
+  min-height: var(--space-6);
+  color: var(--color-text-tooltip);
+  white-space: pre-wrap;
+  word-break: break-word;
+  border-radius: var(--radius-medium);
+  box-shadow: var(--elevation-300, 0 2px 7px rgba(0, 0, 0, 0.15));
+}
+.fp-tooltip-arrow {
+  fill: var(--color-bg-tooltip);
+  width: var(--space-3_5);
+  height: var(--space-1_5);
+  position: relative;
+  bottom: 1px;
+}
+.fp-textarea {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: var(--space-6);
+  padding: var(--space-1) var(--space-2);
+  background-color: var(--figma-color-bg-secondary);
+  border-radius: var(--radius-medium);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: var(--line-height-default);
+  color: var(--figma-color-text);
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: -1px;
+  outline-color: transparent;
+  resize: none;
+  word-break: break-word;
+}
+.fp-textarea:hover:where(:not(:disabled, :focus)) {
+  outline-color: var(--figma-color-border);
+}
+.fp-textarea:focus {
+  outline-color: var(--figma-color-border-selected);
+}
+.fp-textarea:disabled {
+  background-color: var(--figma-color-bg);
+  outline-color: var(--figma-color-border-disabled);
+  color: var(--figma-color-text-disabled);
+}
+.fp-textarea::placeholder {
+  color: var(--figma-color-text-tertiary);
+}
+.fp-MenuContent {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: default;
+  padding: var(--space-2);
+  background-color: var(--color-bg-menu);
+  border-radius: var(--radius-large);
+  font-size: var(--font-size-menu);
+  font-family: var(--font-family-default);
+  font-weight: var(--font-weight-default);
+  letter-spacing: var(--letter-spacing-default);
+  color: var(--color-text-menu);
+  box-shadow: var(--elevation-400);
+}
+.fp-MenuItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: var(--space-6);
+  padding: 0 var(--space-2);
+  color: var(--color-text-menu);
+  line-height: 1rem;
+  white-space: nowrap;
+  border-radius: var(--radius-medium);
+}
+.fp-MenuItem[data-highlighted] {
+  outline: 0;
+  background-color: var(--color-bg-menu-selected);
+}
+.fp-MenuItem[data-disabled] {
+  color: var(--color-text-menu-tertiary);
+}
+.fp-MenuSeparator {
+  margin: var(--space-2) 0;
+  height: 1px;
+  background-color: var(--color-border-menu);
+}
+.fp-MenuLabel {
+  display: flex;
+  align-items: center;
+  height: var(--space-6);
+  padding: 0 var(--space-4);
+  color: var(--color-text-menu-tertiary);
+}
+.fp-MenuLabel:where(.fp-MenuContent:has(.fp-MenuCheckboxItem, .fp-MenuRadioItem) .fp-MenuLabel) {
+  padding-left: var(--space-6);
+}
+.fp-MenuGroup {
+  padding: var(--space-2) 0;
+}
+.fp-MenuGroup:first-child {
+  padding-top: 0;
+}
+.fp-MenuGroup:last-child {
+  padding-bottom: 0;
+}
+.fp-MenuGroup:not(:first-child) {
+  border-top: 1px solid var(--color-border-menu);
+}
+.fp-MenuSubtriggerCaret {
+  margin-left: auto;
+  margin-right: calc(-1 * var(--space-2));
+  padding-left: var(--space-6);
+  --color-icon: var(--color-icon-menu);
+}
+.fp-MenuCheckboxItem,
+.fp-MenuRadioItem {
+  padding-left: var(--space-6);
+}
+.fp-MenuItemIndicator {
+  position: absolute;
+  left: var(--space-1);
+  --color-icon: var(--color-icon-menu);
+}
+.fp-SelectTrigger {
+  all: unset;
+  appearance: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  width: 100%;
+  padding: 0 0 0 var(--space-2);
+  height: var(--space-6);
+  border: 1px solid var(--figma-color-border);
+  border-radius: var(--radius-medium);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
+  letter-spacing: var(--letter-spacing-default);
+  color: var(--figma-color-text);
+}
+.fp-SelectTriggerIcon {
+  margin-left: auto;
+}
+.fp-SelectScrollUpButton,
+.fp-SelectScrollDownButton {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--space-6);
+  background-color: var(--color-bg-menu);
+  --color-icon: var(--color-icon-menu);
+}
+.fp-SelectScrollUpButton:hover, .fp-SelectScrollDownButton:hover {
+  background-color: var(--color-bg-menu-hover);
+}
+.fp-SelectScrollUpButton {
+  top: 0;
+  border-radius: var(--radius-large) var(--radius-large) 0 0;
+}
+.fp-SelectScrollDownButton {
+  bottom: 0;
+  border-radius: 0 0 var(--radius-large) var(--radius-large);
+}
+.fp-Button {
+  box-sizing: border-box;
+  background-clip: border-box;
+  background-color: transparent;
+  user-select: none;
+  appearance: none;
+  border: 0;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: fit-content;
+  outline-width: 1px;
+  outline-offset: -1px;
+  outline-style: solid;
+  outline-color: transparent;
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: var(--line-height-default);
+  border-radius: var(--radius-medium);
+}
+.fp-Button:where(.fp-variant-secondary) {
+  --button-color-bg: transparent;
+  --button-color-border: var(--figma-color-text);
+  --button-color-text: var(--figma-color-border);
+}
+.fp-Button:where(.fp-variant-secondary) {
+  color: var(--figma-color-text);
+  outline-color: var(--figma-color-border);
+}
+.fp-Button:where(.fp-variant-secondary):active {
+  background-color: var(--figma-color-bg-pressed);
+}
+.fp-Button:where(.fp-variant-secondary):focus-visible {
+  outline-color: var(--figma-color-border-selected);
+}
+.fp-Button:where(.fp-variant-secondary):disabled {
+  color: var(--figma-color-text-disabled);
+  outline-color: var(--figma-color-border-disabled);
+}
+.fp-Button:where(.fp-variant-primary) {
+  background-color: var(--figma-color-bg-brand);
+  color: var(--figma-color-text-onbrand);
+}
+.fp-Button:where(.fp-variant-primary):active {
+  background-color: var(--figma-color-bg-brand-pressed);
+}
+.fp-Button:where(.fp-variant-primary):focus-visible {
+  outline-color: var(--figma-color-border-onbrand-strong);
+  box-shadow: 0 0 0 1px var(--figma-color-border-selected-strong);
+}
+.fp-Button:where(.fp-variant-primary):disabled {
+  color: var(--figma-color-text-ondisabled);
+  background-color: var(--figma-color-bg-disabled);
+}
+.fp-Button:where(.fp-variant-destructive) {
+  background-color: var(--figma-color-bg-danger);
+  color: var(--figma-color-text-ondanger);
+}
+.fp-Button:where(.fp-variant-destructive):active {
+  background-color: var(--figma-color-bg-danger-pressed);
+}
+.fp-Button:where(.fp-variant-destructive):focus-visible {
+  outline-color: var(--figma-color-border-ondanger-strong);
+  box-shadow: 0 0 0 1px var(--figma-color-border-danger-strong);
+}
+.fp-Button:where(.fp-variant-destructive):disabled {
+  color: var(--figma-color-text-ondisabled);
+  background-color: var(--figma-color-bg-disabled);
+}
+.fp-Button:where(.fp-variant-success) {
+  background-color: var(--figma-color-bg-success);
+  color: var(--figma-color-text-onsuccess);
+}
+.fp-Button:where(.fp-variant-success):active {
+  background-color: var(--figma-color-bg-success-pressed);
+}
+.fp-Button:where(.fp-variant-success):focus-visible {
+  outline-color: var(--figma-color-border-onbrand-strong);
+  box-shadow: 0 0 0 1px var(--figma-color-border-success-strong);
+}
+.fp-Button:where(.fp-variant-success):disabled {
+  color: var(--figma-color-text-ondisabled);
+  background-color: var(--figma-color-bg-disabled);
+}
+.fp-Button:where(.fp-variant-inverse) {
+  background-color: var(--figma-color-bg-inverse);
+  color: var(--figma-color-text-oninverse);
+  font-weight: 400;
+}
+.fp-Button:where(.fp-variant-inverse):active {
+  background-color: var(--figma-color-bg-brand-pressed);
+}
+.fp-Button:where(.fp-variant-inverse):focus-visible {
+  outline-color: var(--figma-color-border-onbrand-strong);
+  box-shadow: 0 0 0 1px var(--figma-color-border-selected);
+}
+.fp-Button:where(.fp-variant-inverse):disabled {
+  color: var(--figma-color-text-ondisabled);
+  background-color: var(--figma-color-bg-disabled);
+}
+.fp-Button:where(.fp-variant-text) {
+  background-color: transparent;
+  outline-color: transparent;
+  color: var(--figma-color-text);
+}
+.fp-Button:where(.fp-variant-text):hover {
+  background-color: var(--figma-color-bg-hover);
+}
+.fp-Button:where(.fp-variant-text):active {
+  background-color: var(--figma-color-bg-pressed);
+}
+.fp-Button:where(.fp-variant-text):focus-visible {
+  outline-color: var(--figma-color-border-selected);
+}
+.fp-Button:where(.fp-variant-text):disabled {
+  color: var(--figma-color-text-disabled);
+  outline-color: var(--figma-color-border-disabled);
+}
+.fp-Button:where(.fp-full-width) {
+  width: 100%;
+  max-width: 100%;
+}
+.fp-Button:where(.fp-size-small) {
+  height: var(--space-6);
+  padding: var(--space-1) var(--space-2);
+}
+.fp-Button:where(.fp-size-medium) {
+  height: var(--space-8);
+  padding: var(--space-2) var(--space-3);
+}
+.fp-IconButton {
+  box-sizing: border-box;
+  background-clip: border-box;
+  background-color: transparent;
+  user-select: none;
+  appearance: none;
+  border: 0;
+  padding: 0;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  --color-icon: var(--figma-color-icon);
+  border-radius: var(--radius-medium);
+}
+.fp-IconButton:where(:hover:not(:disabled)) {
+  background-color: var(--figma-color-bg-pressed);
+}
+.fp-IconButton:focus-visible {
+  outline-offset: -1px;
+  outline: 1px solid var(--figma-color-border-selected);
+}
+.fp-IconButton:disabled {
+  --color-icon: var(--figma-color-icon-disabled);
+}
+.fp-IconButton:where(.fp-size-small) {
+  width: var(--space-6);
+  height: var(--space-6);
+}
+.fp-IconButton:where(.fp-size-medium) {
+  width: var(--space-8);
+  height: var(--space-8);
+}
+.fp-IconButton[data-state='open']:where(.fp-active-appearance-subtle) {
+  background-color: var(--figma-color-bg-selected);
+  --color-icon: var(--figma-color-icon-brand);
+}
+.fp-IconButton[data-state='open']:where(.fp-active-appearance-solid) {
+  background-color: var(--figma-color-bg-selected-strong);
+  --color-icon: var(--figma-color-icon-onbrand);
+}
+.fp-switchRoot {
+  appearance: none;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: var(--space-6);
+  height: var(--space-3);
+  padding: 0;
+  background: linear-gradient(90deg, var(--figma-color-bg-brand) 0px 24px, var(--figma-color-icon-tertiary) 24px 48px);
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  background-clip: padding-box;
+  border-radius: var(--radius-full);
+  border: 0;
+  transition: background-position 0.1s ease-out;
+}
+.fp-switchRoot:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid var(--figma-color-border-selected);
+}
+.fp-switchRoot[data-disabled] {
+  background: var(--figma-color-icon-disabled);
+  border-color: var(--figma-color-icon-disabled);
+}
+.fp-switchRoot[data-state='unchecked'] {
+  background-position: -24px;
+}
+.fp-switchRoot[data-state='checked'] {
+  background-position: 0;
+}
+.fp-switchThumb {
+  box-sizing: border-box;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: var(--space-2_5);
+  width: var(--space-2_5);
+  border-radius: var(--radius-full);
+  background: var(--figma-color-icon-onbrand);
+  transition: all 0.1s ease-out;
+}
+.fp-switchThumb[data-disabled] {
+  background-color: var(--figma-color-bg);
+  border-color: var(--figma-color-bg);
+}
+.fp-switchThumb[data-state='unchecked'] {
+  left: 1px;
+}
+.fp-switchThumb[data-state='checked'] {
+  left: calc(100% - var(--space-2_5) - 1px);
+}
+:root,
+.light,
+.light-theme {
+  --slider-root-size: var(--space-6);
+  --slider-track-size: var(--space-4);
+  --slider-thumb-width: var(--space-4);
+  --slider-track-border-color: #0000001a;
+  --slider-track-bg: var(--figma-color-bg-secondary);
+  --slider-thumb-bg: transparent;
+}
+.figma-dark {
+  --slider-track-border-color: #ffffff1a;
+}
+.fp-SliderRoot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  outline: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.fp-SliderRoot[data-orientation='horizontal'] {
+  height: var(--slider-root-size);
+  border-width: 0 calc(var(--slider-thumb-width) / 2);
+}
+.fp-SliderRoot[data-orientation='vertical'] {
+  flex-direction: column;
+  width: var(--slider-root-size);
+  border-width: calc(var(--slider-thumb-width) / 2) 0;
+}
+.fp-SliderTrack {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  background: var(--slider-track-bg);
+  border-radius: var(--radius-full);
+  outline: 1px solid var(--slider-track-border-color);
+  outline-offset: -1px;
+}
+.fp-SliderTrack[data-orientation='horizontal'] {
+  margin-left: calc((var(--slider-thumb-width) / 2) * -1);
+  margin-right: calc((var(--slider-thumb-width) / 2) * -1);
+  height: var(--slider-track-size);
+}
+.fp-SliderTrack[data-orientation='vertical'] {
+  margin-top: calc((var(--slider-thumb-width) / 2) * -1);
+  margin-bottom: calc((var(--slider-thumb-width) / 2) * -1);
+  width: var(--slider-track-size);
+}
+.fp-SliderRange {
+  position: absolute;
+  display: block;
+  background-color: var(--figma-color-bg-brand);
+  border-radius: var(--radius-full);
+}
+.fp-SliderRange[data-orientation='horizontal'] {
+  height: var(--slider-track-size);
+  margin-left: calc((var(--slider-thumb-width) / 2) * -1);
+  margin-right: calc((var(--slider-thumb-width) / 2) * -1);
+}
+.fp-SliderRange[data-orientation='vertical'] {
+  width: var(--slider-track-size);
+  margin-top: calc((var(--slider-thumb-width) / 2) * -1);
+  margin-bottom: calc((var(--slider-thumb-width) / 2) * -1);
+}
+.fp-SliderRange[data-disabled] {
+  background-color: var(--figma-color-bg-disabled);
+}
+.fp-SliderThumb {
+  box-sizing: border-box;
+  display: block;
+  width: var(--slider-track-size);
+  height: var(--slider-track-size);
+  background-color: var(--slider-thumb-bg);
+  border: 4px solid var(--figma-color-icon-onbrand);
+  border-radius: var(--radius-full);
+  box-shadow: var(--elevation-200);
+  outline: 0;
+}
+.fp-SliderThumb[data-disabled] {
+  background-color: var(--figma-color-bg-disabled-secondary);
+  border: 0;
+  box-shadow: none;
+}
+.fp-SliderThumb.fp-SliderThumb-focusVisible:focus-visible {
+  outline: 1px solid var(--figma-color-border-selected);
+}
+.fp-SliderThumb.fp-SliderThumb-baseValue {
+  --slider-thumb-bg: var(--figma-color-icon-onbrand);
+}
+.fp-SliderHint {
+  position: absolute;
+  display: block;
+  width: var(--space-1);
+  height: var(--space-1);
+  background-color: var(--figma-color-icon-tertiary);
+  border-radius: var(--radius-full);
+}
+.fp-SliderHint[data-orientation='horizontal'] {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.fp-SliderHint[data-orientation='vertical'] {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fp-SliderHint.fp-SliderHint-baseValue {
+  background-color: var(--figma-color-icon);
+}
+.fp-DialogBaseContent {
+  font-family: var(--font-family-default);
+  color: var(--figma-color-text);
+  background-color: var(--figma-color-bg);
+  border-radius: var(--radius-large);
+  box-shadow: var(--elevation-500);
+  overflow-y: auto;
+  outline: 0;
+}
+.fp-DialogBaseHeader {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: var(--space-10);
+  padding: var(--space-1) var(--space-2);
+  border-bottom: 1px solid var(--figma-color-border);
+  background-color: var(--figma-color-bg);
+}
+.fp-DialogBaseTitle {
+  padding-left: var(--space-2);
+}
+.fp-DialogBaseControls {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.fp-DialogBaseSection {
+  box-sizing: border-box;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--figma-color-border);
+}
+.fp-DialogBaseSection:where(:last-child) {
+  border-bottom: 0;
+}
+.fp-DialogBaseSection:where(.fp-DialogBaseSection-base) {
+  padding: var(--space-4);
+}
+.fp-DialogBaseSection:where(.fp-DialogBaseSection-small) {
+  padding: var(--space-2) var(--space-4);
+}
+.fp-DialogBaseOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-overlay-dialog);
+}
+.fp-DialogContent {
+  position: fixed;
+  max-width: calc(100vw - 32px);
+  max-height: 80%;
+}
+.fp-DialogContent:where(.fp-placement-center) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fp-DialogContent:where(.fp-placement-top) {
+  top: min(10vh, 80px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fp-DialogContent:where(.fp-size-1) {
+  width: 288px;
+}
+.fp-DialogContent:where(.fp-size-2) {
+  width: 352px;
+}
+.fp-DialogContent:where(.fp-size-3) {
+  width: 448px;
+}
+.fp-DialogContent:where(.fp-size-fullscreen) {
+  inset: 0;
+}
+.fp-AlertDialogContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: calc(100vw - 32px);
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-4);
+}
+.fp-AlertDialogContent:where(.fp-placement-center) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fp-AlertDialogContent:where(.fp-placement-top) {
+  top: min(10vh, 80px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fp-AlertDialogContent:where(.fp-size-1) {
+  width: 288px;
+}
+.fp-AlertDialogContent:where(.fp-size-2) {
+  width: 352px;
+}
+.fp-AlertDialogContent:where(.fp-size-3) {
+  width: 448px;
+}
+.fp-AlertDialogTitle {
+  margin: 0;
+}
+.fp-AlertDialogActions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--space-2);
+  padding-top: var(--space-2);
+}
+.fp-TabsList {
+  display: flex;
+  overflow-y: auto;
+  gap: var(--space-2);
+}
+.fp-TabsTrigger {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: var(--space-6);
+  padding: 0 var(--space-2);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: var(--line-height-default);
+  white-space: nowrap;
+}
+.fp-TabsTrigger:where([data-state='inactive']) {
+  color: var(--figma-color-text-secondary);
+  --color-icon: var(--figma-color-icon-secondary);
+}
+.fp-TabsTrigger:where([data-state='active']) {
+  font-weight: var(--font-weight-strong);
+  color: var(--figma-color-text);
+  --color-icon: var(--figma-color-icon);
+  background: var(--figma-color-bg-secondary);
+  border-radius: var(--radius-medium);
+}
+.fp-CheckboxRoot {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--space-4) auto;
+  min-height: 24px;
+  gap: var(--space-1) var(--space-2);
+}
+.fp-CheckboxInput {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+  width: var(--space-4);
+  height: var(--space-4);
+  margin: var(--space-1) 0;
+  background-color: transparent;
+  border: 1px solid var(--figma-color-border-strong);
+  border-radius: var(--radius-medium);
+  flex-shrink: 0;
+}
+.fp-CheckboxInput:focus-visible {
+  outline-offset: -1px;
+  outline: 1px solid var(--figma-color-border-selected);
+}
+.fp-CheckboxInput:focus-visible:checked {
+  outline-offset: 0;
+  outline: 1px solid var(--figma-color-border-selected-strong);
+  border-color: var(--figma-color-icon-onbrand);
+}
+.fp-CheckboxInput:checked {
+  background-color: var(--figma-color-bg-brand);
+  border-color: transparent;
+}
+.fp-CheckboxInput:disabled {
+  border-color: var(--figma-color-border-disabled-strong);
+}
+.fp-CheckboxInput:disabled:checked {
+  border-color: transparent;
+  background-color: var(--figma-color-border-disabled-strong);
+}
+.fp-CheckboxIndicator {
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  top: var(--space-1);
+}
+.fp-CheckboxCheckmark,
+.fp-CheckboxIndeterminate {
+  display: none;
+}
+.fp-CheckboxInput:checked ~ .fp-CheckboxIndicator .fp-CheckboxCheckmark {
+  --color-icon: var(--figma-color-icon-onbrand);
+  display: block;
+}
+.fp-CheckboxInput:indeterminate ~ .fp-CheckboxIndicator .fp-CheckboxIndeterminate {
+  --color-icon: var(--figma-color-icon);
+  display: block;
+}
+.fp-CheckboxInput:disabled:indeterminate ~ .fp-CheckboxIndicator .fp-CheckboxIndeterminate {
+  --color-icon: var(--figma-color-icon-disabled);
+}
+.fp-CheckboxLabel {
+  margin-top: var(--space-1);
+}
+.fp-CheckboxInput:disabled ~ .fp-CheckboxLabel {
+  color: var(--figma-color-text-disabled);
+}
+.fp-CheckboxDescription {
+  color: var(--figma-color-text-secondary);
+  grid-area: 2 / 2;
+}
+.fp-RadioGroupRoot {
+  display: flex;
+}
+.fp-RadioGroupRoot[data-orientation='horizontal'] {
+  gap: var(--space-5);
+}
+.fp-RadioGroupRoot[data-orientation='vertical'] {
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.fp-RadioGroupItem {
+  all: unset;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  background-color: var(--figma-color-bg);
+  border: 4px solid transparent;
+  border-radius: var(--radius-full);
+  outline-offset: -1px;
+  outline: 1px solid var(--figma-color-icon);
+}
+.fp-RadioGroupItem:focus-visible {
+  outline-color: var(--figma-color-border-selected);
+}
+.fp-RadioGroupItem[data-state='checked'] {
+  background-color: var(--figma-color-icon);
+  border-color: var(--figma-color-bg);
+}
+.fp-RadioGroupItem[data-disabled] {
+  outline-color: var(--figma-color-icon-disabled);
+}
+.fp-RadioGroupItem[data-disabled][data-state='checked'] {
+  background-color: var(--figma-color-icon-disabled);
+}
+.fp-RadioGroupLabel {
+  display: flex;
+  gap: var(--space-2);
+}
+.fp-RadioGroupLabel[data-disabled] {
+  color: var(--figma-color-text-disabled);
+}
+.fp-SegmentedControlRoot {
+  display: inline-flex;
+  background-color: var(--figma-color-bg-secondary);
+  border-radius: var(--radius-medium);
+}
+.fp-SegmentedControlRoot:where(.fp-full-width) {
+  display: flex;
+}
+.fp-SegmentedControlItem {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  flex: 1 0 auto;
+  min-width: var(--space-6);
+  height: var(--space-6);
+  background-color: transparent;
+  border-radius: var(--radius-medium);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: var(--line-height-default);
+  white-space: nowrap;
+  --color-icon: var(--figma-color-icon-secondary);
+}
+.fp-SegmentedControlItem[aria-checked='true'] {
+  --color-icon: var(--figma-color-icon);
+  background-color: var(--figma-color-bg);
+  box-shadow: inset 0 0 0 var(--space-px) var(--figma-color-border);
+}
+.fp-SegmentedControlItem:focus-visible {
+  outline: 1px solid var(--figma-color-border-selected);
+  outline-offset: -1px;
+}
+.fp-SegmentedControlItem:disabled {
+  --color-icon: var(--figma-color-icon-disabled);
+}
+.fp-SegmentedControlText {
+  display: flex;
+  align-items: center;
+  padding: var(--space-2);
+  gap: var(--space-1_5);
+}
+[data-disabled] .fp-SegmentedControlText {
+  color: var(--figma-color-text-disabled);
+}
+:where(.fp-CollapsibleContent .fp-CollapsibleRoot) {
+  margin-left: calc(-1 * var(--space-1));
+}
+.fp-CollapsibleTrigger {
+  all: unset;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--space-2) 0;
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
+  letter-spacing: var(--letter-spacing-default);
+  line-height: var(--line-height-default);
+  color: var(--figma-color-text-secondary);
+}
+.fp-CollapsibleIndicator {
+  --color-icon: var(--figma-color-icon-secondary);
+}
+[data-state='open'] > .fp-CollapsibleIndicator {
+  transform: rotate(90deg);
+}
+.fp-CollapsibleContent {
+  margin-left: var(--space-4);
+}
+.fp-ColorPickerHueSlider:where(.fp-color-model-hsv, .fp-color-model-hsl, .fp-color-model-rgb, .fp-color-model-hex) {
+  --slider-track-bg: linear-gradient(
+          90deg,
+          rgba(255, 0, 0, 1) calc(var(--slider-track-size) / 2),
+          rgba(255, 48, 0, 1),
+          rgba(255, 96, 0, 1),
+          rgba(255, 143, 0, 1),
+          rgba(255, 191, 0, 1),
+          rgba(255, 239, 0, 1),
+          rgba(223, 255, 0, 1),
+          rgba(175, 255, 0, 1),
+          rgba(128, 255, 0, 1),
+          rgba(80, 255, 0, 1),
+          rgba(32, 255, 0, 1),
+          rgba(0, 255, 16, 1),
+          rgba(0, 255, 64, 1),
+          rgba(0, 255, 112, 1),
+          rgba(0, 255, 159, 1),
+          rgba(0, 255, 207, 1),
+          rgba(0, 255, 255, 1),
+          rgba(0, 207, 255, 1),
+          rgba(0, 159, 255, 1),
+          rgba(0, 112, 255, 1),
+          rgba(0, 64, 255, 1),
+          rgba(0, 16, 255, 1),
+          rgba(32, 0, 255, 1),
+          rgba(80, 0, 255, 1),
+          rgba(127, 0, 255, 1),
+          rgba(175, 0, 255, 1),
+          rgba(223, 0, 255, 1),
+          rgba(255, 0, 239, 1),
+          rgba(255, 0, 191, 1),
+          rgba(255, 0, 143, 1),
+          rgba(255, 0, 96, 1),
+          rgba(255, 0, 48, 1) calc(100% - calc(var(--slider-track-size) / 2))
+  );
+}
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .fp-ColorPickerHueSlider:where(.fp-color-model-hsv, .fp-color-model-hsl):where(.fp-color-space-display-p3) {
+      --slider-track-bg: linear-gradient(
+              90deg,
+              color(display-p3 1 0 0) calc(var(--slider-track-size) / 2),
+              color(display-p3 1 0.1875 0),
+              color(display-p3 1 0.375 0),
+              color(display-p3 1 0.5625 0),
+              color(display-p3 1 0.75 0),
+              color(display-p3 1 0.9375 0),
+              color(display-p3 0.875 1 0),
+              color(display-p3 0.6875 1 0),
+              color(display-p3 0.5 1 0),
+              color(display-p3 0.3125 1 0),
+              color(display-p3 0.125 1 0),
+              color(display-p3 0 1 0.0625),
+              color(display-p3 0 1 0.25),
+              color(display-p3 0 1 0.4375),
+              color(display-p3 0 1 0.625),
+              color(display-p3 0 1 0.8125),
+              color(display-p3 0 1 1),
+              color(display-p3 0 0.8125 1),
+              color(display-p3 0 0.625 1),
+              color(display-p3 0 0.4375 1),
+              color(display-p3 0 0.25 1),
+              color(display-p3 0 0.0625 1),
+              color(display-p3 0.125 0 1),
+              color(display-p3 0.3125 0 1),
+              color(display-p3 0.5 0 1),
+              color(display-p3 0.6875 0 1),
+              color(display-p3 0.875 0 1),
+              color(display-p3 1 0 0.9375),
+              color(display-p3 1 0 0.75),
+              color(display-p3 1 0 0.5625),
+              color(display-p3 1 0 0.375),
+              color(display-p3 1 0 0.1875) calc(100% - calc(var(--slider-track-size) / 2))
+      );
+    }
+  }
+}
+.fp-ColorPickerAlphaSlider {
+  --track-bg-step-1: var(--track-bg-transparent-srgb);
+  --track-bg-step-2: var(--track-bg-opaque-srgb);
+  --slider-thumb-bg: var(--thumb-bg-srgb);
+
+  --slider-track-bg: linear-gradient(
+          to right,
+          var(--track-bg-step-1) 0 calc(var(--slider-track-size) / 2),
+          var(--track-bg-step-2) calc(100% - calc(var(--slider-track-size) / 2)) 100%
+  ),
+  url('data:image/svg+xml;utf8,%3Csvg%20width%3D%222%22%20height%3D%222%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0%200h1v2h1V1H0%22%20fill-rule%3D%22nonzero%22%20fill%3D%22%23e1e1e1%22/%3E%3C/svg%3E')
+  0 0 / auto 66.66%,
+  #fff;
+}
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .fp-ColorPickerAlphaSlider:where(.fp-color-space-display-p3) {
+      --slider-thumb-bg: var(--thumb-bg-p3);
+      --track-bg-step-1: var(--track-bg-transparent-p3);
+      --track-bg-step-2: var(--track-bg-opaque-p3);
+    }
+  }
+}
+.fp-ColorPickerArea {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.fp-ColorPickerAreaCanvas {
+  width: 100%;
+  height: 100%;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #0000001a; /*TODO: color-bordertranslucent*/
+  outline-offset: -1px;
+  --base-color: var(--base-color-srgb);
+  --gradient-step-black: rgb(0 0 0);
+  --gradient-step-black-transparent: rgb(0 0 0 / 0);
+  --gradient-step-white: rgb(255 255 255);
+  --gradient-step-white-transparent: rgb(255 255 255 / 0);
+  --gradient-step-gray: rgb(128 128 128);
+  --gradient-step-gray-transparent: rgb(128 128 128 / 0);
+}
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .fp-ColorPickerAreaCanvas:where(.fp-color-space-display-p3) {
+      --base-color: var(--base-color-p3);
+      --gradient-step-black: color(display-p3 0 0 0);
+      --gradient-step-black-transparent: color(display-p3 0 0 0 / 0);
+      --gradient-step-white: color(display-p3 1 1 1);
+      --gradient-step-white-transparent: color(display-p3 1 1 1 / 0);
+      --gradient-step-gray: color(display-p3 0.5 0.5 0.5);
+      --gradient-step-gray-transparent: color(display-p3 0.5 0.5 0.5 / 0);
+    }
+  }
+}
+.fp-ColorPickerAreaCanvas:where(.fp-color-model-hsv, .fp-color-model-hex, .fp-color-model-rgb) {
+  background: linear-gradient(to bottom, var(--gradient-step-black-transparent) 0%, var(--gradient-step-black) 100%),
+  linear-gradient(to right, var(--gradient-step-white) 0%, var(--base-color) 100%);
+}
+.fp-ColorPickerAreaCanvas:where(.fp-color-model-hsl) {
+  background: linear-gradient(
+          to bottom,
+          var(--gradient-step-white) 0%,
+          var(--gradient-step-white-transparent) 49.99%,
+          var(--gradient-step-black-transparent) 50.01%,
+          var(--gradient-step-black) 100%
+  ),
+  linear-gradient(to right, var(--gradient-step-gray) 0%, var(--gradient-step-gray-transparent) 100%),
+  var(--base-color);
+}
+.fp-ColorPickerThumb {
+  position: absolute;
+  box-sizing: border-box;
+  box-shadow: var(--elevation-200);
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+  background: var(--thumb-bg-srgb);
+}
+.fp-ColorPickerThumb:focus-visible {
+  outline: 1px solid var(--figma-color-border-selected);
+}
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    .fp-ColorPickerThumb:where(.fp-color-space-display-p3) {
+      background: var(--thumb-bg-p3);
+    }
+  }
+}

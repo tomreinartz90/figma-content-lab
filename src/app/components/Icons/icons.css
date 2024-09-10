@@ -1,0 +1,26 @@
+.icon__name {
+    margin-left: 8px;
+}
+
+.icon__list {
+    width: 100%;
+}
+
+.icon__button {
+    width: 100%;
+    justify-content: start;
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}

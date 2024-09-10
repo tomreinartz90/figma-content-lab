@@ -1,6 +1,5 @@
-.DS_Store
-.idea
-node_modules/
-dist/
-.nova
-secrets.json
+node_modules
+dist
+settings.json
+yarn-error.log
+.vscode
